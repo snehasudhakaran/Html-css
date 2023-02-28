@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title> HEALTH CARE </title>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width initial-scale=1.0">
+            <meta name="author"  content="sneha">
+            <meta name="description" content="website for Health care">
+            <meta name="keywords" content="html, css">
+        </head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            nav{
+                display: flex;
+                justify-content: center;
+                gap: 450px;
+                font-size:20px ;
+                margin-top: 25px;
+            }
+            nav h1{
+                color:rgb(8, 136, 38);
+            }
+            ul{
+                list-style:none;
+                display:flex;
+                margin-right: -45px;
+            }
+            li{
+                margin-right: 50px;
+            }
+            header h1{
+                color:black;
+                text-shadow:5px 5px 20px rgb(241, 246, 246);
+            }
+            #nav a{
+                text-decoration: none;
+                color: rgb(8, 136, 38);
+                font-weight:bold;
+                font-size:15px;
+            }
+            a{
+                text-decoration:none;
+                color:black;
+            }
+
+            #nav a:active{
+                color: red;
+            }
+            #nav a.button{
+                border:2px solid rgb(8, 136, 38);
+                border-radius:20px;
+                padding:10px;
+            }
+           #nav a.button:hover{
+                background-color: rgb(8, 136, 38);
+                color:black;
+                border:2px solid black;
+            }
+            header{
+                background: url('hospitals.jpg') no-repeat;
+                height: 650px;
+                background-size: cover;
+                display: flex;
+                justify-content:flex-end;
+                align-items: flex-end;
+            }
+            div{
+                margin-bottom: 150px;
+                margin-right:100px;
+            }
+            div h1{
+                font-size: 50px;
+                text-align: center;
+            }
+            header p{
+               text-align: center;
+               font-size: 27px;
+               margin-top: 30px;
+               color:black;
+               font-size:bold;
+               text-shadow:5px 5px 20px white,5px 5px 20px white;
+            }
+            .par{
+                  text-align:center;
+            }
+            .header{
+                font-size: 30px;
+                color:black;
+            }
+            .para{
+                font-size: 20px;
+                color:grey;
+                margin-top:10px;
+            }
+            #section1{
+                height: 900px;
+                background-color:rgba(12, 11, 11, 0.2);
+                padding-top:50px;
+            }
+            table{
+                margin-top: -130px;
+                padding-left: 70px;
+                padding-top:50px;
+                padding-bottom:50px;
+            }
+            .section2{
+                background-color:black;
+                height: 400px;
+                color:azure;
+                margin-bottom: 0px;
+            }
+            label{
+                font-size:20px;
+            }
+            input{
+                padding-left: 5px;
+                padding-right:300px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                border-radius: 5px;
+                background-color: #ECECEC;
+            }
+            ::placeholder{
+                font-size: 15px;
+            }
+            
+            form{
+                margin-bottom: 30px;
+            }
+            textarea{
+                resize:none;
+                border-radius: 5px;
+                padding: 10px;
+                background-color: #ECECEC;
+            }
+            header h1:hover{
+                font-size:40px ;
+            }
+            header p:hover{
+                font-size: 25px;
+            }
+            .grid-container{
+                display:flex;
+                justify-content:space-around;
+                grid-template-columns:40% 40%;
+                margin-top:50px;
+                margin-left: 50px;
+                margin-right: -50px;
+                height:650px;
+            }
+
+            .section3{
+                background:linear-gradient(white,rgba(10, 242, 10, 0.4),white);
+                margin-top:80px;
+            }
+            .section3 h1{
+                font-size: 30px;
+                font-weight: 300;
+            }
+            .grid-item2{
+                border: 2px solid black;
+                padding:40px 70px;
+                height: 700px;
+            }
+            .grid-item2 p{
+                font-size:20px;
+                color:rgb(47, 46, 46);
+            }
+            .grid-item1 p{
+                font-size:23px;
+                color:rgb(47, 46, 46);
+                text-align: center;
+            }
+            .sections{
+               background: url('hospital5.jpg') no-repeat;
+               background-size:cover;
+               height:700px;
+            }
+            div.grid-items1{
+                width:50%;
+                height: 600px;
+                background-color:rgb(24, 24, 24,0.8);
+                margin-top:50px;
+                margin-left:-140px;
+                padding:50px 30px 30px;
+                color:rgb(203, 189, 189);
+            }
+            .grid-container1{
+                display:flex;
+                justify-content:space-around;
+                grid-template-columns:10% 30%;
+                margin-top:50px;
+                margin-left: 50px;
+                margin-right: -50px;
+                height:650px;
+            }
+            .grid-items1 h1{
+                text-align:left;
+                font-size:30px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+            h1.heading4{
+                font-size:40px;
+                text-align: center;
+                margin-bottom:30px;
+            }
+           p.para1{
+            font-weight: 400;
+            margin-left: 30px;
+           }
+           .web1{
+                display:grid;
+                justify-content:space-around;
+                grid-template-columns:30% 30% 30%;
+                padding:50px;
+           }
+           .web2 h1{
+            font-size:25px;
+            margin-bottom: 20px;
+           }
+           .web2 p{
+            margin-left: 40px;
+            color: grey;
+           }
+           .web3 h1{
+            font-size:20px;
+            margin-bottom: 20px;
+           }
+           .web3 p{
+            margin-left: 115px;
+            color: grey;
+            margin-bottom: 10px;
+           }
+           .web4 h1{
+            font-size:20px;
+            margin-bottom: 20px;
+           }
+           .web4 p{
+            margin-left: 90px;
+            color: grey;
+            margin-bottom: 10px;
+           }
+           .sun{
+            display: flex;
+            gap: 30px;
+            justify-content: space-around;
+            margin-top: 25px;
+            color:grey;
+           }
+           .ul{
+            margin-right: 15px;
+           }
+           .head{
+            color:white;
+           }
+           .heading4 a{
+            color:rgb(203, 189, 189);
+           }
+           button{
+            padding: 10px 40px;
+            background-color: transparent;
+            border-radius: 25px ;
+            font-size: 25px;
+           }
+           button:active{
+            color:black;
+            background-color: grey ;
+           }
+        </style>
+        <body>
+            
+            <hr style="margin-top:3px;">
+            <nav  id="nav">
+                <h1> <img src="plus-removebg-preview.png" width="20px" height="20px"> VR HEALTHCARE </h1>
+                <ul>
+                <li> <a href="#section3"><i class="fa fa-home" style="font-size:25px;"></i> About us</a></li>
+                <li> <a href="#section4"><i class="fa fa-paperclip" style="font-size:20px;"></i> Quality</a> </li>
+                <li> <a href="#section2"><i class="fa fa-phone" style="font-size:20px;"></i> Contacts</a> </li>
+                <li> <a href="#section1" class="button">Make an appointment</a> </li>
+                </ul>
+            </nav>
+            <hr style="margin-top: 10px;margin-bottom: 3px;">
+            <header>
+                <div>
+                <h1> EXCEPTIONAL MEDICAL <br>
+                    SPECIALITY HEALTHCARE</h1>
+                <p>Enhancing our patients' and their<br> families' quality of lives</p>
+                </div>
+            </header>
+                <hr style="margin-top: 3px;">
+                <hr style="margin-top: 80px;margin-bottom:2px;">
+            <section id="section1">
+                <div class="par">
+                <h1 class="header"> <a href="#nav">Make a appointment </a></h1>
+                <p class="para">Enhancing our patients' and their families' quality of lives</p>
+                </div>
+                <table>
+                    <tr>
+                        <td>
+                            <form>
+                                <label for="name"> Full name </label><br><br>
+                                <input type="text" id="name" name="fullname" placeholder="Full name...">
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <label for="email"> Email Address </label><br><br>
+                                <input type="email" id="email" name="email" placeholder="Email Address...">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="right">
+                            <form>
+                                <label for="number"> Phone Number </label><br><br>
+                                <input type="text" id="number" name="phone number" placeholder="PhoneNumber...">
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <label for="date"> Booking Date </label><br><br>
+                                <input type="text"  id="date" name="booking date" placeholder="Booking date...">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="right">
+                            <form>
+                                <label for="Doctor"> Doctor </label><br><br>
+                                <input type="text" id="Doctor" name="Doctor" placeholder="Doctor Name...">
+                            </form>
+                        </td>
+                        <td>
+                            <form>
+                                <label for="deparment"> Department: </label><br><br>
+                                <input type="text" id="department" name="department" placeholder="Department...">
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <form>
+                                <label for="com"> Message: </label><br><br>
+                                <textarea id="com" name="comments" placeholder="Enter your comments..." rows="8" cols="100"></textarea>
+                            </form>
+                            <button type="submit">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+            <hr style="margin-top: 3px;">
+            <section class="section3" id="section3">
+              <div class="grid-container">
+                <div class="grid-item1">
+                    <h1 style="text-align:left;margin-bottom:20px;"><a href="#nav">VR HOSPITALS Enterprise Limited</a></h1>
+                    <img src="hospital3.jpg" height="400px" width="100%">
+                    <p style="margin-top:20px;">It is an Indian multinational healthcare group headquartered in Chennai.
+                        Apart from the eponymous hospital chain, the company also operates pharmacies, primary care and diagnostic
+                        centres, telehealth clinics, and digital healthcare services among others through its subsidiaries. 
+                    </p> 
+                   
+                </div>
+                <div class="grid-item2">
+                    <p style="margin-bottom:15px ;color:black;"><i class="fa fa-check"></i>11000+ Healing Hands</p>
+                       <p style="margin-bottom:15px ;">
+                       Largest network of the world's finest and brightest medical experts
+                       who provide compassionate care using outstanding expertise and advanced technology.
+                       </p>
+                    <p style="margin-bottom:15px ;color:black;"><i class="fa fa-check"></i>
+                        5000+ Pharmacies</p>
+                        <p style="margin-bottom:15px ;">
+                        VR Pharmacy is India's first, largest and most trusted branded pharmacy network,
+                        with over 5000 plus outlets covering the entire nation
+                        </p>
+                    <p style="margin-bottom:15px ;color:black;"><i class="fa fa-check"></i>
+                        Most Advanced Healthcare Technology</p>
+                        <p style="margin-bottom:15px ;">
+                        VR Hospitals has been the pioneer in bringing ground-breaking healthcare technologies to India.
+                        </p>
+                    <p style="color:black;margin-bottom: 15;"><i class="fa fa-check"></i>
+                        Best Clinical Outcomes</p>
+                        <p>
+                        Leveraging its vast medical expertise & technological advantage, VR Hospitals has
+                        consistently delivered best in class clinical outcomes.
+                        </p>
+                </div>
+              </div>
+            </section> 
+            <section class="sections" id="section4">
+                <div class="grid-container1">
+                <div class="grid-items1">
+               <h1 class="heading4"><a href="#nav">Quality over here</a></h1>
+               <span>
+                <h1><i class="fa fa-medkit" style="font-size:24px"></i> General Diagnosis</h1>
+                <p class="para1">We will help a client's problems to <br>develop their healthy life and have quality time.</p>
+                <h1><i class="fa fa-heartbeat" style="font-size:24px"></i> Cardiology</h1>
+                <p class="para1">Cardiothoracic surgery involves the treatment of diseases<br> affecting organs inside the chest (thorax),
+                 including cardiology treatment<br> which involves conditions of the heart and lungs.
+                </p>
+                <h1><i class="fa fa-stethoscope" style="font-size:24px"></i> Dentistry</h1>
+                <p class="para1">The Centres have dedicated Cardiothoracic CCUs with 1:1 <br>nursing ratio, round the clock. They are well equipped with bedside 
+                color <br> doppler, echocardiography system, continuous oxygen supply, </p>
+                </span>
+                </div>
+                <div class="grid-items2"></div>  
+            </section>
+            <hr style="margin-bottom:2px;margin-top:80px;">
+            <section class="section2" id="section2">
+                <div class="web1">
+                    <div class="web2">
+                        <h1><a class="head" href="#nav">Be Future-Ready</a></h1>
+                        <p>Get exclusive <span style="color:beige;">VR HealthCare</span> updates straight to your inbox.</p>
+                    </div>
+                    <div class="web3">
+                        <h1>About</h1>
+                        <p>Our Team</p>
+                        <p>Clients</p>
+                        <p>Press</p>
+                        <p>Blog</p>
+                    </div>
+                    <div class="web4">
+                        <h1>Contact Us</h1>
+                        <p><i class='fa fa-phone'style="color:beige;"></i> +(65)6653 8065</p>
+                        <p><i class='fa fa-envelope-open'style="color:beige;"></i> hello@futuremarketer<br>.com</p>
+                        <p><i class="fa fa-map-marker"style="color:beige;"></i> One Neil Road #02-02, chennai 088804</p>
+                    </div>
+                </div>
+                <hr style="margin-top:-250px ;">
+                <div class="sun">
+                    <p>@2016 FutureMarketer Private Ltd. All Rights Reserved.</p>
+                    <ul>
+                        <li class="ul"><i class="fa fa-instagram" style="font-size:30px;"></i></li>
+                        <li class="ul"><i class="fa fa-facebook-square" style="font-size:30px;"></i></li>
+                        <li class="ul"><i class="fa fa-google-plus-square" style="font-size:30px;"></i></li>
+                        <li class="ul"><i class="fa fa-linkedin-square" style="font-size:30px;"></i></li>
+                        <li class="ul"><i class="fa fa-telegram" style="font-size:30px;"></i></li>
+                    </ul>
+                    <ul style="margin-right:-120px;">
+                        <li>Terms of Service</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+            </section>
+        </body>
+    </html>
