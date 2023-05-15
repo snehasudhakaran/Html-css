@@ -1,0 +1,203 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: black;
+    color:white;
+}
+.container .profile , .container .second-page,.container .third-page,.container .four-page{
+    display:grid;
+    height:710px;
+    grid-template-columns: 16% 84%;
+}
+.container .profile .menu ,.container .second-page .menu,.container .third-page .menu, .container .four-page .menu{
+    background-color: rgba(66, 65, 65, 0.2);
+    padding: 50px 20px;
+    text-align: center;
+}
+.container .profile .menu img,.container .second-page .menu img, .container .third-page .menu img , .container .four-page .menu img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    border:4px solid rgb(217, 188, 21);
+    margin-bottom: 9px;
+}
+.container .profile .menu h3, .container .second-page .menu h3, .container .third-page .menu h3 , .container .four-page .menu h3{
+    font-size: 20px;
+}
+.container .profile .menu p , .container .second-page .menu p, .container .third-page .menu p, .container .four-page .menu p{
+    font-size: 14px;
+    margin-bottom: 36px;
+}
+.container .profile .menu button , .container .second-page .menu button, .container .third-page .menu button, .container .four-page .menu button{
+    width:100%;
+    margin-bottom: 11px;
+    background-color: rgba(151, 151, 151, 0.2);
+    border: none;
+    border-radius: 20px;
+    padding:7px 10px 8px;
+    color:white;
+}
+.container .profile .main{
+    width:80%;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 400px;
+}
+.container .profile .main .container h4{
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 400;
+    margin-bottom: 6px;
+}
+.container .profile .main .container h1{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.container .profile .main .container p{
+    margin-bottom: 18px;
+}
+.container .profile .main .container button{
+    display:flex;
+    gap:10px;
+    height:30px;
+    padding:6px 20px  7px;
+    background-color: rgba(151, 151, 151, 0.2);
+    color:white;
+    border:none;
+    border-radius: 25px;
+}
+.container .profile .main .container span:nth-child(1){
+    color:rgb(217, 188, 21);
+}
+.container .second-page .main,.container .third-page .main,.container .four-page .main{
+    padding: 50px 50px;
+}
+.container .second-page .main h1 , .container .third-page .main h1, .container .four-page .main h1{
+     text-align: center;
+     font-weight: 600;
+     font-size: 30px;
+}
+.container .second-page .main h1 span, .container .third-page .main h1 span{
+    color:rgb(217, 188, 21);
+}
+.container .second-page .main .line1 , .container .third-page .main 
+.line1, .container .four-page .main .line1{
+    width:100%;
+    height:1px;
+    background-color: rgb(54, 53, 53);
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.container .second-page .main .boxes{
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: space-between;
+}
+.container .second-page .main .boxes .box{
+    padding:20px;
+    display:grid;
+    grid-template-columns: 15% 85%;
+}
+
+.container .second-page .main .boxes .box .boxe{
+    position: relative;
+}
+.container .second-page .main .boxes .box .boxe .circle{
+    width:40px;
+    height:40px;
+    background-color: rgb(217, 188, 21);
+    border-radius: 50%;
+}
+.container .second-page .main .boxes .box .boxe .line{
+    width:1px;
+    position: absolute;
+    left: 40%;
+    height:70%;
+    z-index: -1;
+    background-color: rgb(253, 252, 251);
+    border-radius: 3px;
+}
+.container .second-page .main .boxes .box .boxe span{
+    background-color: rgb(20, 20, 20);
+    padding: 3px 20px 4px;
+    border-radius: 20px;
+}
+.container .second-page .main .boxes .box .boxe h3{
+    margin-top: 10px;
+    font-size: 15px;
+    margin-bottom: 7px;
+}
+.container .second-page .main .boxes .box .boxe p{
+    font-size: 14px;
+
+}
+.container .third-page .main  .boxes{
+    display:grid;
+    grid-template-columns: 32% 32% 32%;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+.container .third-page .main  .boxes .box{
+    position: relative;
+    height: 200px;
+}
+.container .third-page .main  .boxes .box img{
+    position: absolute;
+    width:100%;
+    height:200px;
+    border-radius: 10px;
+}
+.container .four-page .main .boxes{
+    display:grid;
+    grid-template-columns: 40% 50%;
+}
+.container .four-page .main .boxes .box h2{
+    font-weight: 500;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+.container .four-page .main .boxes .box .box1{
+    display: flex;
+    gap:8px;
+    margin-bottom: 5px;;
+    font-size: 18px;
+}
+.container .four-page .main .boxes .box .box1 span{
+    color:rgb(248, 216, 31);
+}
+.container .four-page .main .boxes .box form input,.container .four-page .main .boxes .box form textarea{
+    background-color: rgb(37, 37, 37,0.6);
+    padding:10px;
+    color:rgb(228, 227, 227);
+    border:none;
+    width:100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.container .four-page .main .boxes .box form textarea{
+    color:rgb(121, 118, 118);
+    resize:none;
+}
+.container .four-page .main .boxes .box form button{
+    background-color: rgb(37, 37, 37,0.6);
+    display:flex;
+    gap:7px;
+    color:white;
+    border-radius: 20px;
+    padding:5px 20px 6px;
+    border: none;
+    position: relative;
+    width:85px;
+}
+.container .four-page .main .boxes .box form button span{
+    position: absolute;
+    top:7px;
+    right:15px;
+}

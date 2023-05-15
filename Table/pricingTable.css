@@ -1,0 +1,63 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: rgb(147, 174, 211,0.2);
+    padding: 70px 30px;
+}
+.container{
+    width:50%;
+    display:block;
+    margin:auto;
+    display:flex;
+    justify-content: space-between;
+}
+.container .box{
+    background-color:white;
+    border-radius: 5px;
+    box-shadow: 2px 2px 9px rgb(0,0,0,0.2);
+    width:32%;
+    padding:20px;
+    text-align: center;
+}
+.container .box h2{
+    font-weight: 500;
+    font-size: 30px;
+}
+.container .box .spec{
+    font-size: 13px;
+    margin-top: -1px;
+    margin-bottom: 15px;
+}
+.container .box h1{
+    color:rgb(113, 11, 113);
+    font-size: 25px;
+    margin-bottom: 6px;
+}
+.container .box h1 span{
+    font-size: 16px;
+    color:black;
+}
+.container .box .g{
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.container .box .orange{
+    color:rgb(254, 144, 10);
+}
+.container .box button{
+    margin-top: 30px;
+    background-color: rgb(129, 33, 129);
+    border-radius: 20px;
+    border: none;
+    color:white;
+    font-size: 13px;
+    padding:5px 20px 6px;
+    font-weight: 600;
+}
+.container .box .or{
+    background-color:rgb(254, 144, 10);
+}

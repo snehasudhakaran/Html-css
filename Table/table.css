@@ -1,0 +1,40 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background:linear-gradient(to right,rgb(168, 12, 12),rgb(204, 22, 22),red);
+    color:rgb(252, 251, 251);
+}
+.container h1{
+    text-align: center;
+    font-weight: 500;
+    text-shadow: 2px 2px 6px rgb(0,0,0,0.2);
+    margin-top: 50px;
+}
+.container table{
+    width:80%;
+    margin: 20px auto;
+}
+.container table{
+    border: 1px solid rgb(186, 184, 184 ,0.6);
+    border-collapse: collapse;
+} 
+.container table .row {
+    border-bottom:1px solid rgb(181, 179, 179 , 0.3);
+    border-collapse: collapse;
+}
+
+.container table tr , .container table tr td , .container table tr th{
+    padding: 15px 10px;
+}
+.container table tr th{
+    text-align: left;
+    font-weight: 500;
+}
+.container table .spec-row{
+    background-color: rgba(241, 240, 240, 0.4);
+    border-bottom: none;
+}
